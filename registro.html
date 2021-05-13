@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+    <script src="js/validacion.js"></script>
+    <link rel="shortcut icon" href="img/Icono.png">
     <title>Registro</title>
 
 </head>
@@ -57,35 +59,40 @@
                   <p style="text-align: center; font-family: Gamer;">¡Unete a nuestra comunidad! 
                       ¡Solo se tardara un clic!</p>
               </div>
-              <form class="col-12" method="get">
+              <form class="col-12" method="POST" name="datos" onsubmit="return validacion()">
                 <div class="form-group" id="user-group">
                   <label>Correo Electrónico </label> 
-                      <input type="text" class="form-control" name="email" id="mail">
+                      <input type="text" class="form-control" name="email" id="correo" placeholder="direccion@correo.com">
                   </div>
                   <div class="form-group" id="user-group">
                     <label>Usuario </label> 
-                      <input type="text" class="form-control" name="Usuario" id="user">
+                      <input type="text" class="form-control" name="Usuario" id="usuario" placeholder="usuario123">
                   </div>
                   <div class="form-group" id="contrasena-group">
                     <label>Contraseña </label> 
-                      <input type="password" class="form-control" name="password" id="pass">
+                      <input type="password" class="form-control" name="password" id="clave">
                   </div>
                   <div class="form-group" id="contrasena-group">
-                    <label>Reingresa la Contraseña </label> 
-                      <input type="password" class="form-control" name="password2" id="pass">
+                    <label>Verifica la contraseña </label> 
+                      <input type="password" class="form-control" name="password2" id="clave2">
                   </div>
                   <div class="form-group" id="user-group">
                     <label>Fecha de Nacimiento </label>
-                      <input type="date" class="form-control" name="fecha" min="1900-01-01" id="nac">
+                      <input type="date" class="form-control" name="fecha" min="1900-01-01" id="fechanac">
                   </div> <br>
                   <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Crear cuenta </button>
               </form> <br>
               <div class="col-12 forgot">
-                  <a href="#">Al hacer clic en registrarse, acepta todos los terminos de servicio y politica de la comunidad.</a>
+                <a style="color: rgb(93, 93, 255);">Al hacer clic en crear cuenta, acepta todos los terminos de servicio y politica de la comunidad.</a>
               </div> <br>
           </div>
       </div>
   </div>
     <br>
+    <footer><hr><p>Página web creada por: Bastián Alvarado, Yanara Hidalgo, Marco Illescas. @Copyrigth Derechos reservados.</p>
+      <div><img src="img/face.png" width="70px" alt="Facebook"></a>
+        <img src="img/insta.png" width="70px" alt="Instagram"></a>
+        <a href="https://github.com/BastyRioT/Exp2_AlvaradoHidalgoIllescas_004D" target="_blank"><img src="img/github.png" width="70px" alt="GitHub"></a></div>
+    </footer> 
 </body>
 </html>
