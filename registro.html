@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+    <title>Registro</title>
+
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light baralign">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand" href="inicio.html">
+          <img src="img/Icono.png" width="70" height="60">
+        </a>
+
+        <div class="collapse navbar-collapse"  id="opciones"> 
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="inicio.html"><img src="img/blue.png" width="33" height="33" alt="">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html"><img src="img/pink.png" width="33" height="33" alt="">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria-fotografica.html"><img src="img/Pac-man.png" width="33" height="33" alt="">Galeria Fotográfica</a>
+            </li>        
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="torneos.html">Torneos</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registrarse</a>
+            </li>  
+          </ul>
+        </div>
+      </nav>
+    <!--Conteiner y desarrollo del registro-->
+    <div class="modal-dialog text-center">
+      <div class="col-sm-15 main-section">
+          <div class="modal-content">
+              <div class="col-12 user-img"> <br>
+                  <h1 style="font-family: Gaming; font-size: 2em;">Registrate para una mejor experiencia</h1><br>
+                  <p style="text-align: center; font-family: Gamer;">¡Unete a nuestra comunidad! 
+                      ¡Solo se tardara un clic!</p>
+              </div>
+              <form class="col-12" method="get">
+                <div class="form-group" id="user-group">
+                  <label>Correo Electrónico </label> 
+                      <input type="text" class="form-control" name="email" id="mail">
+                  </div>
+                  <div class="form-group" id="user-group">
+                    <label>Usuario </label> 
+                      <input type="text" class="form-control" name="Usuario" id="user">
+                  </div>
+                  <div class="form-group" id="contrasena-group">
+                    <label>Contraseña </label> 
+                      <input type="password" class="form-control" name="password" id="pass">
+                  </div>
+                  <div class="form-group" id="contrasena-group">
+                    <label>Reingresa la Contraseña </label> 
+                      <input type="password" class="form-control" name="password2" id="pass">
+                  </div>
+                  <div class="form-group" id="user-group">
+                    <label>Fecha de Nacimiento </label>
+                      <input type="date" class="form-control" name="fecha" min="1900-01-01" id="nac">
+                  </div> <br>
+                  <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Crear cuenta </button>
+              </form> <br>
+              <div class="col-12 forgot">
+                  <a href="#">Al hacer clic en registrarse, acepta todos los terminos de servicio y politica de la comunidad.</a>
+              </div> <br>
+          </div>
+      </div>
+  </div>
+    <br>
+</body>
+</html>
