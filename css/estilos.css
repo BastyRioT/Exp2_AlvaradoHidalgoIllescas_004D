@@ -150,9 +150,13 @@ footer{
         color: red;
         width: 300px;
         font-size: 0.8em;
-        margin-top: -5px;
+        margin-top: -10px;
         margin-bottom: 10px;
     }
+
+    .finp {
+        width: 60%;
+      }
 
  
         

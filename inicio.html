@@ -26,18 +26,18 @@
                 <a class="nav-link" href="inicio.html"><img src="img/blue.png" width="33" height="33" alt="">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="quienes-somos.html"><img src="img/pink.png" width="33" height="33" alt="">Quienes Somos</a>
+                <a class="nav-link" href="quienes-somos.html"><img src="img/pink.png" width="33" height="33" alt="">Quiénes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="galeria-fotografica.html"><img src="img/Pac-man.png" width="33" height="33" alt="">Galeria Fotográfica</a>
+                <a class="nav-link" href="galeria-fotografica.html"><img src="img/Pac-man.png" width="33" height="33" alt="">Galería Fotográfica</a>
               </li>  
             </ul>
               <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="torneos.html">Torneos</a>
+                <a class="nav-link" href="torneos.html"><img src="img/crash.png" width="35" height="35">Torneos</a>
               </li>    
               <li class="nav-item">
-                <a class="nav-link" href="registro.html">Registrarse</a>
+                <a class="nav-link" href="registro.html"><img src="img/aku aku.png" width="35" height="35">Regístrate</a>
               </li>  
             </ul>
           </div>
@@ -89,12 +89,22 @@
               <span class="sr-only">Siguiente</span>
             </a>
           </div>
+          <hr>
+      </div><br><br>
+      <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center col-sm-15 main-section">
+        <h2>Mostrar fecha y hora actual</h2>
+        <button class="btn btn-primary" onclick="MostrarFecha()">¿Qué hora es?</button>
+        <img src="img/fil.png" width="120" height="120"alt="">
+        <p id="demo"></p>
+        <hr>
       </div>
-      <br><br><br><br>
-      <h3 style="font-size: 40pt; text-align: center; font-family: Orbitron;">Chile Real Gamers</h3><br>
-      <div><h3 style="text-align: center;">Es una página web dedicada a Chilenos y Chilenas que le gustan los esports, en ella podrás ver,
+      <br>
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+      <h3 class="display-1" onmouseover="style.color = 'blue'" onmouseout="style.color= 'black'">Chile Real Gamers</h3>
+      <div><h3 style="text-align: center;">Es una página web dedicada a chilenos y chilenas que le gustan los esports, en ella podrás ver,
         organizar y participar en torneos, organizar tu propio grupo de clan, encontrar guías para mejorar o configurar ese juego que tanto te gusta,
         eso y ¡mucho más!</h3><br><br>
+      </div>
         <img class="logo img-fluid" src="img/Logotipo.png"><br></div>
   <!--Javascript-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -107,4 +117,10 @@
       <a href="https://github.com/BastyRioT/-Experiencia1_AlvaradoHidalgoIllescas_004D" target="_blank"><img src="img/github.png" width="70px" alt="GitHub"></a></div>
   </footer> 
   </body>
+  <script>
+    function MostrarFecha() 
+        {
+            document.getElementById("demo").innerHTML = Date();
+        }
+  </script>
 </html> 
